@@ -1,5 +1,5 @@
 /*
-  Name:Áé©úªâ
+  Name:é¾æ˜èŠ¬
   Student ID:F74004038
   The class to save the road's informations.
 */
@@ -82,6 +82,6 @@ public class List {
         }
 
         public void printAns(){//print out the answer
-                System.out.println(this.name+", ³Ì°ª¦¨¥æ»ù: "+this.maxPrice+", ³Ì§C¦¨¥æ»ù: "+this.minPrice);
+                System.out.println(this.name+", æœ€é«˜æˆäº¤åƒ¹: "+this.maxPrice+", æœ€ä½æˆäº¤åƒ¹: "+this.minPrice);
         }
 }

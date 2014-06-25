@@ -1,5 +1,5 @@
 /*
-  Name:Áé©úªâ
+  Name:é¾æ˜èŠ¬
   Student ID:F74004038
   Call read1 to parse data from URL to data.json.
   Call myJson to find out the answer.

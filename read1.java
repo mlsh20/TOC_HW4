@@ -1,5 +1,5 @@
 /*
-  Name:Áé©úªâ
+  Name:é¾æ˜èŠ¬
   Student ID:F74004038
   Parse data from URL , save them to data.json
 */
@@ -15,11 +15,11 @@ public class read1{
         int count;
         try  {
                 URL pageUrl = new URL(strURL );
-                BufferedReader bis = new BufferedReader(new InputStreamReader(pageUrl.openStream(), "UTF-8"));// Åª¤Jºô­¶(¦ì¤¸¦ê¬y)
-                BufferedWriter bw = new BufferedWriter(new FileWriter("data.json", false));//¼gÀÉ¾É¦V
+                BufferedReader bis = new BufferedReader(new InputStreamReader(pageUrl.openStream(), "UTF-8"));// è®€å…¥ç¶²é (ä½å…ƒä¸²æµ)
+                BufferedWriter bw = new BufferedWriter(new FileWriter("data.json", false));//å¯«æª”å°å‘
                 //System.out.println("read1() running " );
                 while ((line = bis.readLine()) != null) {
-                        bw.write(line); // ¼g¤JÀÉ®×
+                        bw.write(line); // å¯«å…¥æª”æ¡ˆ
                 }
                 bis.close();
                 bw.close();

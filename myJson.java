@@ -1,5 +1,5 @@
 /*
-  Name:Áé©úªâ
+  Name:é¾æ˜èŠ¬
   Student ID:F74004038
   Read data.json and save the data into JSONArray json.
   Deal with road names and check whether this road is already in the jList,if yes,add information about the road,or add this new road's information into jList.
@@ -29,15 +29,15 @@ public class myJson{
 
                 for (i=0;i<json.length();i++){
                         jo = json.getJSONObject(i);
-                        name=findString(jo.getString("¤g¦a°Ï¬q¦ì¸m©Î«Øª«°ÏªùµP"));//get the road's name
+                        name=findString(jo.getString("åœŸåœ°å€æ®µä½ç½®æˆ–å»ºç‰©å€é–€ç‰Œ"));//get the road's name
                         if(name.compareTo("no")!=0){
                                 for(k=0;k<i;k++){
                                         if(jList[k].getName().compareTo(name)==0){//the road is already in the jList
-                                                jList[k].setList(name,jo.getInt("¥æ©ö¦~¤ë"),jo.getInt("Á`»ù¤¸"));//add information
+                                                jList[k].setList(name,jo.getInt("äº¤æ˜“å¹´æœˆ"),jo.getInt("ç¸½åƒ¹å…ƒ"));//add information
                                                 break;
                                         }
                                         else if(jList[k].getName().compareTo("Initial")==0){//the road is new for the jList
-                                                jList[k].setList(name,jo.getInt("¥æ©ö¦~¤ë"),jo.getInt("Á`»ù¤¸"));//add information
+                                                jList[k].setList(name,jo.getInt("äº¤æ˜“å¹´æœˆ"),jo.getInt("ç¸½åƒ¹å…ƒ"));//add information
                                                 break;
                                         }
                                 }
@@ -60,23 +60,23 @@ public class myJson{
         public String findString(String input){//cut the road's information
                 int i,k;
                 String output=" ";
-                if(input.contains("¸ô")){
-                        i=input.lastIndexOf("¸ô");
+                if(input.contains("è·¯")){
+                        i=input.lastIndexOf("è·¯");
                         output = input.substring(0,i+1);
                 }
-                else if(input.contains("µó")){
-                        i=input.lastIndexOf("µó");
+                else if(input.contains("è¡—")){
+                        i=input.lastIndexOf("è¡—");
                         output = input.substring(0,i+1);
                 }
-                else if(input.contains("¤j¹D")){
-                        i=input.lastIndexOf("¹D");
-                        k=input.lastIndexOf("¤j");
+                else if(input.contains("å¤§é“")){
+                        i=input.lastIndexOf("é“");
+                        k=input.lastIndexOf("å¤§");
                         if (i==k+1){
                                 output = input.substring(0,i+1);
                         }
                 }
-                else if(input.contains("«Ñ")){
-                        i=input.lastIndexOf("«Ñ");
+                else if(input.contains("å··")){
+                        i=input.lastIndexOf("å··");
                         output = input.substring(0,i+1);
                 }
                 else{
